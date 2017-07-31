@@ -222,7 +222,7 @@ input[type="radio"]:checked+.point{
 }
 .line-background{
     width:100%;
-    padding-bottom:-4px;
+    margin-bottom:-5px;
     background-color:#fbfcff;
     display: inline-block;
     border-top:1px solid #e8e8e8;
