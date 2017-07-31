@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	font-size:62.5%
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #68cdd5;
+}
+.footer1{
+	margin:2rem 0 1rem 2rem;
+    width:54px;
+    height:54px;
+}
+
+.log{
+	text-align:center;
+	margin: 5rem 0 2rem 0;
+
+    height:70px;
+}
+.text{
+	margin:5rem 6% 10rem 6%;
+	text-align:center;
+	font-size:1.5rem;
+	line-height:2rem;
+	color:#ffffff;
+}
+.footer{
+	padding:0 20% 0 20%;
+	text-align:center
+}
+.footer2{
+	float:left;
+
+}
+.footer3{
+	float:right;
+
+}
+.footer p{
+	color:#ffffff
+}

@@ -1,0 +1,263 @@
+.clearfix:after {content:""; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+html{
+    font-size:625%;
+}
+body{
+    position: relative;
+    margin:0 auto;
+    overflow-x: hidden;
+}
+
+/*header*/
+header{
+    position:relative;
+    float:left;
+    width:100%;
+    z-index:1;
+}
+.header-top{
+    height:.4rem;
+    width:100%;
+}
+
+.phone{
+    position: relative;
+    font-size:.14rem;
+    color:#29b078;
+    line-height:.4rem;
+}
+.connection{
+    display: inline-block;
+    margin-top: .03rem;
+}
+span>b{
+    width:.25rem;
+    height:.24rem;
+    background:url(../images/sprite1.png) center no-repeat;
+    display:inline-block;
+    background-size:100%;
+    margin:0 .05rem;
+}
+.wechat>b{
+    background-position: 0 0;
+    display:inline-block;
+}
+.qq>b{
+    background-position: 0 50%;
+    display:inline-block;
+}
+.weibo>b{
+    background-position:0 100%;
+    display:inline-block;
+}
+
+/*导航栏*/
+.navbar-header img{
+
+    padding:.22rem 0;
+    margin-left:.15rem;
+}
+.header-bottom{
+    margin:0;
+    background-color:#29b078!important;
+    border:none;
+}
+@media only screen and (max-width:767px){
+    .navbar-header>img{
+        max-width:2rem;
+        padding:.1rem 0;
+    }
+    .header-bottom-item{
+        float:none;
+        width:100%;
+        margin:0;
+        background-color:#29b078!important;
+    }
+    .navbar-collapse>.header-bottom-item>.homepage{
+        padding:.1rem .3rem;
+        border-bottom:4px solid #29b078;
+        text-align:center;
+        font-size:.16rem;
+    }
+}
+@media only screen and (min-width:768px){
+    .header-bottom-item{
+        margin:0;
+        background-color:#29b078!important;
+        border:none;
+        float:right;
+    }
+    .navbar-collapse .header-bottom-item .homepage{
+        padding:.38rem .3rem;
+        border-bottom:4px solid #29b078;
+        text-align:center;
+        font-size:.16rem;
+    }
+}
+.header-green{
+    background-color:#29b078;
+}
+.header-bottom-item .homepage a{
+    background-color:#29b078!important;
+    padding:0;
+    color:white!important;
+}
+.navbar-collapse .header-bottom-item .homepage:hover{
+    border-bottom:4px solid white;
+}
+.nav-padding{
+    padding:0;
+}
+
+
+/*main*/
+main{
+    width:100%;
+    position: relative;
+    float:left;
+    background: #fafafa;
+    padding-bottom:1.5rem;
+}
+.background{
+    width:100%;
+    background-color:#f1a750;
+}
+.hand{
+    display:block;
+    width:100%;
+    background-size:cover;
+}
+.hand>img{
+    width:100%;
+    height:100%;
+}
+.order{
+    font-size:.16rem;
+    line-height:.8rem;
+}
+.order-to{
+    color:#29b078;
+}
+.box{
+    background-color:white;
+    box-shadow:1px 1px 8px 1px #999;
+    padding:0;
+}
+
+.cor-top{
+    line-height:.6rem;
+    font-size:.16rem;
+    border-bottom:1px solid #e6e6e6;
+    text-align: center;
+}
+
+.cor-list{
+    width:1rem;
+    margin:.35rem auto;
+    font-size:.14rem;
+    list-style:none;
+    text-align:left;
+    padding-bottom:.35rem;
+}
+a:link{
+    text-decoration:none;
+}
+.cor-list a{
+    display:block;
+    margin:.18rem 0;
+    color:#29b078;
+}
+.round{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin-right:.1rem;
+    border:1px solid #ff640c;
+    border-radius:50%;
+    color:white;
+}
+.cor-list a:hover {
+    color: #ff640c;
+}
+.cor-list a:hover .round{
+    background-color: #ff640c;
+}
+
+.box-right-top{
+    border-bottom:1px solid #e6e6e6;
+    padding:.1rem .5rem;
+}
+.logo-one{
+    float:left;
+    height:1.5rem;
+    width:2.3rem;
+    background:url(../images/tudou.png) center no-repeat;
+}
+.introduce{
+    line-height:.3rem;
+    font-size:.14rem;
+    color:#999;
+}
+.box-right-bottom{
+    padding:.2rem .5rem 1.5rem .5rem;
+    line-height:.3rem;
+    font-size:.14rem;
+    color:#999;
+}
+
+
+/*footer*/
+footer{
+    float:left;
+    width:100%;
+}
+/*footer-bottom*/
+.footer-bottom{
+    background-color:#29b078;
+}
+.green-pad{
+    padding-top:.36rem;
+    padding-bottom:.18rem;
+}
+.footer-words{
+    font-size:.16rem;
+    color:white;
+}
+.footer-words>a{
+    border-bottom:1px solid rgba(0,0,0,0);
+}
+.footer-words a:hover{
+    border-bottom:1px solid white;
+    color:white;
+}
+.about-us{
+    display: inline-block;
+    margin-top:.35rem;
+    font-size:.14rem;
+    color:white;
+    line-height:.35rem;
+}
+.website{
+    margin-right:.2rem;
+    font-size:.14rem;
+    line-height:.35rem;
+    color:white;
+    padding-bottom:.05rem;
+}
+.qr-code{
+    text-align: right;
+}
+.copy-right{
+    text-align: center;
+    font-size:.12rem;
+    color:white;
+    line-height:.3rem;
+    border-top:1px solid #32c086;
+}
+a:link{
+    text-decoration:none;
+}
+.footer-words>a:link{
+    text-decoration:none;
+}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	width:100%;
+	background-color:#eff0f4;
+	overflow-x:hidden;
+}
+html{
+	font-size:62.5%
+}
+header{
+	position: fixed;
+	padding: 1rem ;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background-color: #5fc0cd;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.close{
+	position:absolute;
+    color:white;
+	font-size:1.6rem;
+	right:1.5rem;
+}
+.register{
+	position:absolute;
+	color:white;
+	font-size:1.6rem;
+	left:1.5rem;
+}
+.log{
+	color:white;
+	font-size:1.8rem;
+	text-align:center;
+}
+
+form{
+	position:absolute;
+	margin:5.5rem 0 0 0;
+	padding:1rem;
+	background-color:white;
+	width:100%;
+}
+.logo-ph{
+	float:left;
+	padding:0 1rem;
+}
+.logo-rec{
+	float:left;
+	padding:0 1rem;
+}
+
+input{
+	border:none;
+	outline:medium;
+	width:10rem;
+	height:2.5rem;
+	font-size:1.5rem;
+
+}
+form-pass {
+	position: absolute;
+	margin: 11.5rem 0 0 0;
+	padding:1rem;
+	background-color: white;
+	width: 100%;
+}
+button{
+	position:absolute;
+	margin:17.5rem 0 0 0;
+	padding:1.5rem;
+	background-color:#5fc0cd;
+	width:100%;
+	border:0;
+	font-size:1.6rem;
+	color:white;
+}
+footer{
+	position:relative;
+	margin:23rem 0 0 0;
+	float:right;
+	font-size:1.6rem;
+	right:1.5rem
+
+}
+.div a{
+	color:#5fc0cd;
+	}
+

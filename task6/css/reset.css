@@ -1,0 +1,6 @@
+@charset 'utf-8';
+/* CSS reset */
+*{
+    outline:none;
+    font-family:"Microsoft YaHei";
+}

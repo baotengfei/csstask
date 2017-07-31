@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css?ver=58">
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" href="css/task10.css" >
+    <title>Title</title>
+</head>
+<body>
+<!--header-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="header-left">客服热线：010-594-78634</span>
+                    <div class="header-right">
+                        <span class="sign-in">登录</span><span class="sign-in">注册</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--main-->
+    <main>
+        <!--导航栏-->
+        <div class="main-top">
+            <div class="container">
+                <nav class="navbar navbar-default nav-background" role="navigation">
+                    <div class="navbar-header">
+                        <img src="images/logo.png" alt="">
+                        <button class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse nav-padding" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav nav-box-float">
+                            <li ><a class="homepage" href="#">首页</a></li>
+                            <li ><a class="homepage" href="#">在线定制</a></li>
+                            <li ><a class="homepage" href="#">标准箱</a></li>
+                            <li ><a class="homepage" href="#">品质保障</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <!--进度条-->
+            <ol class="progress-box">
+                <li>
+                    <span class="line"></span>
+                    <span class="round">1</span>
+                    <p class="word">1.定制纸箱</p>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <span class="round">2</span>
+                    <p class="word">2.选择数量</p>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <span class="round">3</span>
+                    <p class="word">3.上传附件</p>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <span class="round">4</span>
+                    <p class="word">4.确认下单</p>
+                </li>
+            </ol>
+
+            <!--表格内容-->
+            <div class="col-lg-12 line-first">
+                <span>请您按照以下步骤来定制您的纸箱</span>
+            </div>
+            <div class="box-big">
+                <!--选择箱型-->
+                <div class="col-lg-12 line-second">
+                    <b><img src="images/box.png" alt="">&nbsp;&nbsp;选择箱型</b>
+                </div>
+                <div class="col-lg-12 line-background">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 line-third">
+                        <label><input name="box" type="radio" checked="checked">
+                            对口箱
+                            <span class="point"></span>
+                        </label>
+                        <label><input name="box" type="radio">
+                            飞机盒
+                            <span class="point"></span>
+                        </label>
+                        <label><input name="box" type="radio">
+                            天地盖
+                            <span class="point"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 line-select">
+                        <select name="" id="" class="button-style">
+                            <option value="">查看详情</option>
+                            <option value="">查看详情</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--确定尺寸-->
+                <div class="col-lg-12 line-second">
+                    <b><img src="images/Ruler.png" alt="">&nbsp;&nbsp;确定尺寸</b>
+                </div>
+                <div class="col-lg-12 line-background">
+                    <div class="col-md-9 line-third">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 ">
+                                <label><input name="out" type="radio" checked="checked">
+                                    外径
+                                    <span class="point"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-3 line-color">
+                                <span>长</span>
+                                <input class="input-box" type="text">
+                                <span>mm</span>
+                            </div>
+                            <div class="col-md-3 line-color">
+                                <span>宽</span>
+                                <input class="input-box" type="text">
+                                <span>mm</span>
+                            </div>
+                            <div class="col-md-3 line-color">
+                                <span>高</span>
+                                <input class="input-box" type="text">
+                                <span>mm</span>
+                            </div>
+                            <div class="col-lg-3 col-md-3 ">
+                                <label><input name="out" type="radio" >
+                                    内径
+                                    <span class="point"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-3 line-color">
+                                <span>长</span>
+                                <input class="input-box" type="text">
+                                <span>mm</span>
+                            </div>
+                            <div class="col-md-3 line-color">
+                                <span>宽</span>
+                                <input class="input-box" type="text">
+                                <span>mm</span>
+                            </div>
+                            <div class="col-md-3 line-color">
+                                <span>高</span>
+                                <input class="input-box" type="text">
+                                <span>mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 line-select button-padding">
+                        <select name="" id="" class="button-style">
+                            <option value="">查看详情</option>
+                            <option value="">查看详情</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--选择材质-->
+                <div class="col-lg-12 line-second">
+                    <b><img src="images/Cut-Scissors.png" alt="">&nbsp;&nbsp;选择材质</b>
+                </div>
+                <div class="col-lg-12 line-background">
+                    <div class="col-lg-10 col-md-9 col-sm-9 col-xs-9 line-third">
+                        <label><input name="quality" type="radio" checked="checked">
+                            三层A瓦优质
+                            <span class="point"></span>
+                        </label>
+                        <label><input name="quality" type="radio">
+                            三层A瓦优质
+                            <span class="point"></span>
+                        </label>
+                        <label><input name="quality" type="radio">
+                            三层A瓦优质
+                            <span class="point"></span>
+                        </label>
+                        <label><input name="quality" type="radio">
+                            三层A瓦优质
+                            <span class="point"></span>
+                        </label>
+                        <label><input name="quality" type="radio">
+                            三层A瓦优质
+                            <span class="point"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 line-select">
+                        <select name="" id="" class="button-style ">
+                            <option value="">查看详情</option>
+                            <option value="">查看详情</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="next-box">
+                    <button class="next">下一步</button>
+                </div>
+            </div>
+        </div>
+    </main>
+<!--footer-->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <span class="name">51包装网-纸箱包装首选服务平台</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <a href="#"><span class="about-us">关于我们</span></a>
+                        <a href="#"><span class="about-us">配送流程</span></a>
+                        <a href="#"><span class="about-us">联系我们</span></a><br>
+                        <a href="#"><span class="about-us">下单指南</span></a>
+                        <a href="#"><span class="about-us">媒体介绍</span></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="images/qrcode.png" alt="">
+                        <div class="connection">
+                            <span class="phone">TEL:400-0000-000</span><br>
+                            <span>企业QQ：123456789</span><br>
+                            <span>微信号：XXXXXXX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015 &nbsp;All rights reserved. &nbsp;京icp备99999999-1
+        </div>
+    </footer>
+</body>
+</html>

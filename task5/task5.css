@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	font-size:62.5%;
+
+}
+body{
+	margin:0 auto;
+	max-width:750px;
+	overflow-x:hidden;
+	height:100%;
+}
+
+.header{
+	position:fixed;
+	max-width:750px;
+	z-index:99;
+	background-color:#5fc0cd;
+	width:100%;
+	padding:1.5rem 0;
+
+}
+.back{
+	position:relative;
+	float:left;
+	margin-left:1rem;
+}
+.homepage{
+	text-align:center;
+	font-size:2.2rem;
+	color:white;
+}
+
+.picture{
+	position:relative;
+	background:url("background.png") no-repeat center;
+	background-size:cover;
+	height:15rem;
+	width:100%;
+}
+
+.figure{
+	position:absolute;
+	transform:translateY(50%);
+	left:2rem;
+	width:7.5rem;
+	height:7.7rem;
+}
+.user{
+	position:relative;
+	top:40%;
+	margin-left:12rem;
+}
+.name{
+	position:relative;
+	font-size:2rem;
+	color:white;
+}
+.location-shape{
+	position:relative;
+	float:left;
+
+}
+.location{
+	position:relative;
+	float:left;
+	font-size:1.5rem;
+	color:white;
+}
+form{
+	position:relative;
+	top:5.2rem;
+	width:100%;
+	height:100%;
+	background-color:white;
+	padding-bottom:6rem;
+	z-index:98;
+
+}
+
+.shape{
+	position:relative;
+	float:left;
+	margin:0 10px 0 10px;
+	border:2px solid #5fc0cd;
+	width:1px;
+	height:15px;
+	background-color:#5fc0cd;
+
+}
+.star{
+	position:relative;
+	float:left;
+	margin:0 5px 0 15px;
+
+}
+.profession{
+	font-size:1.5rem;
+}
+.advantage{
+	font-size:1.5rem;
+	float:left;
+}
+
+
+.information-red{
+	float:left;
+	padding-left:8rem;
+	font-size:1.5rem;
+	color:#e26163;
+}
+.line{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	margin:1rem 0;
+}
+.item{
+	position:absolute;
+	top:50%;
+	left:1rem;
+	font-size:1.5rem;
+	color:#999;
+	transform:translateY(-50%);
+}
+.information{
+	padding-left:8rem;
+	float:left;
+	font-size:1.5rem;
+}
+
+
+.footer{
+	position:fixed;
+	max-width:750px;
+	z-index:99;
+	bottom:0;
+	width:100%;
+	padding:0;
+	background-color:white;
+}
+.massage{
+	position: relative;
+	float:left;
+	margin:3%;
+	width: 44%;
+	height: 3rem;
+	border: 2px solid #5fc0cd;
+	border-radius: 5px;
+	color: #5fc0cd;
+	background-color: white;
+	font-size: 2rem;
+}
+
+.phone{
+	position: relative;
+	float:left;
+	margin:3%;
+	width: 44%;
+	height: 3rem;
+	border: 2px solid #5fc0cd;
+	border-radius: 5px;
+	color:white;
+	background-color:#5fc0cd;
+	font-size:2rem;
+
+}
