@@ -1,0 +1,87 @@
+html {
+  font-size: 625%;
+}
+@media only screen and (max-width: 414px) {
+  html {
+    font-size: 500%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 400%;
+  }
+}
+body {
+  position: relative;
+  margin: 0 auto;
+  max-width: 720px;
+  font-family: "微软雅黑";
+  background-color: #eff0f4;
+}
+.border {
+  border: none;
+  outline: medium;
+}
+header {
+  padding: 0 .3rem;
+  background-color: #5fc0cd;
+  height: 0.87rem;
+  text-align: center;
+  color: white;
+}
+header .close {
+  float: left;
+  line-height: 0.87rem;
+  font-size: 0.32rem;
+  cursor: pointer;
+}
+header .sign-in {
+  font-size: 0.36rem;
+  line-height: 0.87rem;
+}
+header .sign-up {
+  float: right;
+  line-height: 0.87rem;
+  font-size: 0.32rem;
+  cursor: pointer;
+}
+main .line {
+  margin-top: .16rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+main .line img {
+  padding: 0.1rem .4rem;
+  display: inline-block;
+  height: .45rem;
+  border-right: 2px solid #eaedee;
+}
+main .line input {
+  margin: .25rem .3rem;
+  line-height: 1rem;
+  height: .5rem;
+  width: 60%;
+  font-size: 0.32rem;
+  border: none;
+  outline: medium;
+}
+button {
+  margin-top: .7rem;
+  background-color: #5fc0cd;
+  color: white;
+  font-size: 0.36rem;
+  height: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: medium;
+}
+.forget {
+  float: right;
+  margin-top: .2rem;
+  margin-right: .3rem;
+  font-size: 0.32rem;
+  color: #5fc0cd;
+  cursor: pointer;
+}

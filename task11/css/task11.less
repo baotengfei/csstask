@@ -1,0 +1,104 @@
+
+html{
+  font-size:625%;
+}
+
+@media only screen and(max-width:414px){
+  html{
+    font-size:500%;
+  }
+}
+@media only screen and(max-width:320px){
+  html{
+    font-size:400%;
+  }
+}
+
+
+body{
+  position: relative;
+  margin:0 auto;
+  max-width:720px;
+  font-family: "微软雅黑";
+  background-color:@color;
+}
+@color:#eff0f4;
+@background-color:#5fc0cd;
+@line-height:.87rem;
+@font-size:.32rem;
+.fl(@fl:left){
+  float:@fl;
+}
+.clo(){
+  line-height: @line-height;
+  font-size: @font-size;
+  cursor: pointer;
+}
+.flex(){
+  display:flex;
+  align-items:center;
+}
+.border{
+  border:none;
+  outline:medium;
+}
+
+header{
+  padding:0 .3rem;
+  background-color: @background-color;
+  height:@line-height;
+  text-align:center;
+  color:white;
+  .close{
+    .fl();
+    .clo;
+  }
+  .sign-in{
+    font-size:@font-size+.04;
+    line-height: @line-height;
+  }
+  .sign-up{
+    .fl(right);
+    .clo;
+  }
+}
+main{
+
+  .line{
+    margin-top:.16rem;
+    background-color:white;
+    .flex;
+    img{
+      padding:0.1rem .4rem;
+      display:inline-block;
+      height:.45rem;
+      border-right:2px solid #eaedee;
+    }
+    input{
+      margin:.25rem .3rem;
+      line-height:1rem;
+      height:.5rem;
+      width:60%;
+      font-size: @font-size;
+      .border;
+      }
+  }
+}
+button{
+  margin-top:.7rem;
+  background-color:@background-color;
+  color:white;
+  font-size:@font-size+.04;
+  height:1rem;
+  width:100%;
+  cursor: pointer;
+  .border;
+}
+.forget{
+  .fl(right);
+  margin-top:.2rem;
+  margin-right:.3rem;
+  font-size:@font-size;
+  color:@background-color;
+  cursor: pointer;
+}
