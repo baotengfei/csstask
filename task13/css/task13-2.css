@@ -116,11 +116,10 @@ header .title {
   width: .52rem;
   height: .52rem;
   background-size: contain;
-  display: flex;
-  align-items: center;
 }
 .line .sound audio {
   opacity: 0;
+  transform: translateY(-0.6rem);
 }
 .triangle {
   width: 0;
