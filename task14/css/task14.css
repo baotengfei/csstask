@@ -1,0 +1,202 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+html {
+  font-size: 625%;
+}
+body {
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.middle {
+  display: flex;
+  align-items: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.none {
+  outline: none;
+}
+.contain {
+  background-size: contain;
+}
+.cover {
+  background-size: cover;
+}
+p {
+  margin: 0;
+  padding-bottom: .1rem;
+}
+.header-top {
+  height: .4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.header-top .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-top .container .phone {
+  font-size: .14rem;
+  color: #29b078;
+  line-height: .4rem;
+}
+.header-top .container .connection {
+  width: 1.1rem;
+  height: .4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top .container .connection span {
+  background: url(../images/sprite1.png) center no-repeat;
+  background-size: 100%;
+  width: .25rem;
+  height: .24rem;
+}
+.header-top .container .connection .wechat {
+  background-position: 0 0;
+}
+.header-top .container .connection .qq {
+  background-position: 0 50%;
+}
+.header-top .container .connection .weibo {
+  background-position: 0 100%;
+}
+.header-bottom {
+  background-color: #29b078;
+}
+.header-bottom .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-bottom .container .logo {
+  background: url(../images/home-logo.png) center no-repeat;
+  width: 3rem;
+  height: .56rem;
+  align-self: center;
+}
+.header-bottom .container ul {
+  font-size: .16rem;
+  display: inline-block;
+  margin: 0;
+}
+.header-bottom .container ul .homepage {
+  padding: .4rem .3rem;
+  border-bottom: 4px solid #29b078;
+  display: inline-block;
+  list-style: none;
+}
+.header-bottom .container ul .homepage a {
+  color: white;
+}
+.header-bottom .container ul .homepage:hover {
+  border-bottom: 4px solid white;
+}
+@media screen and (max-width: 768px) {
+  .header-bottom .container ul .homepage {
+    display: none;
+  }
+  .container ul {
+    align-self: center;
+    width: .3rem;
+    height: .3rem;
+    padding-right: .2rem;
+    background: url(../images/option-second.png) center no-repeat;
+    background-size: contain;
+  }
+}
+.footer-bottom {
+  width: 100%;
+  background-color: #29b078;
+}
+.footer-bottom .container {
+  padding-top: .3rem;
+  padding-bottom: .15rem;
+  margin: 0 auto;
+}
+.footer-bottom .container .footer-words {
+  float: left;
+  margin-right: 1.34rem;
+  font-size: .16rem;
+  color: white;
+}
+.footer-bottom .container .footer-words .about .about-us {
+  font-size: .14rem;
+  border-bottom: 1px solid #29b078;
+  color: white;
+  margin-top: .6rem;
+  display: inline-block;
+}
+.footer-bottom .container .footer-words .about .about-us:hover {
+  border-bottom: 1px solid white;
+}
+.footer-bottom .container .footer-words .website {
+  display: inline-block;
+  margin-top: .2rem;
+  margin-right: .34rem;
+  color: white;
+  border-bottom: 1px solid #29b078;
+}
+.footer-bottom .container .footer-words .website:hover {
+  border-bottom: 1px solid white;
+}
+.footer-bottom .container .qr-code {
+  float: right;
+  margin-right: .3rem;
+}
+.footer-bottom .container .qr-code .footer-code {
+  font-size: .16rem;
+  color: white;
+}
+.footer-bottom .copy-right {
+  height: .3rem;
+  font-size: .12rem;
+  border-top: 1px solid #32c086;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a:link {
+  text-decoration: none;
+}
