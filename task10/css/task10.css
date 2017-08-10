@@ -161,8 +161,9 @@ li>a:hover{
 .word{
     font-size:.18rem;
     padding-top:.3rem;
+    color:#ccc;
 }
-ol li:hover {
+ol li:hover .word{
     color:#ff7f02;
 }
 ol li:hover .line{
@@ -171,6 +172,7 @@ ol li:hover .line{
 ol li:hover .round{
     background-color:#ff7f02;
 }
+
 
 
 
@@ -200,25 +202,30 @@ ol li:hover .round{
     margin-right:.5rem;
     margin-bottom:0;
     cursor:pointer;
+    color:#8b8c8c;
 }
 input[type="radio"]{
     margin:.3rem .15rem 0 0;
-    height:.18rem;
-    width:.18rem;
-    border-radius:50%;
     color:#d6d6d6;
 }
 .point {
     position: absolute;
-    background: url(../images/round-blue.png) center no-repeat;
     width: .17rem;
     height: .17rem;
     border-radius: 50%;
     transform: translateY(-.22rem);
-    opacity: 0;
+}
+.point-out{
+    height:.18rem;
+    width:.18rem;
+    border:1px solid #d7d7d7;
+    border-radius:50%;
+    background: #f8f9fb;
+    -webkit-appearance: none;
+    outline: none!important;
 }
 input[type="radio"]:checked+.point{
-    opacity: 1;
+    background: url(../images/round-blue.png) center no-repeat;
 }
 .line-background{
     width:100%;
@@ -228,7 +235,9 @@ input[type="radio"]:checked+.point{
     border-top:1px solid #e8e8e8;
     border-bottom:1px solid #e8e8e8;
 }
-
+.line-color{
+    color:#8b8c8c;
+}
 .line-third{
     padding-left:.3rem;
     padding-bottom:.3rem;
@@ -270,7 +279,9 @@ input[type="radio"]:checked+.point{
 }
 .input-box{
     width:.7rem;
-    margin-top:.3rem
+    margin-top:.3rem;
+    background-color:#fbfcff;
+    border:2px solid #e8e8e8;
 }
 .next-box{
     float:left;

@@ -1,0 +1,511 @@
+
+
+.po(@position: relative){
+  position:@position;
+}
+
+
+.disp(@display:inline-block){
+  display:@display;
+}
+.align{
+  text-align: center;
+}
+@color:#29b078;
+.center{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.flex{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.middle{
+  display:flex;
+  align-items:center;
+}
+.pointer{
+  cursor:pointer;
+}
+.fl(@float:left){
+  float: @float;
+}
+.none{
+  outline:none;
+}
+.contain{
+  background-size:contain;
+}
+.cover{
+  background-size:cover;
+}
+.round(@width:1rem){
+  width:@width;
+  height:@width;
+  border-radius: 50%;
+}
+
+
+
+/*首页*/
+main{
+  background-color:#fafafa;
+  padding-bottom:.9rem;
+  .container{
+    .po;
+    .box-four{
+      .flex;
+      .box{
+        padding-top:.2rem;
+        vertical-align: top;
+        .shape1{
+          height:.53rem;
+          width:.47rem;
+          background-image:url(../../task14/images/sprite-2.png);
+          background-position:0 0;
+          background-size:100%;
+          margin:0 auto;
+        }
+        .shape2{
+          height:.53rem;
+          width:.55rem;
+          background-image:url(../../task14/images/sprite-2.png);
+          background-position:0 -60px;
+          background-size:100%;
+          margin:0 auto;
+        }
+        .shape3{
+          height:.53rem;
+          width:.55rem;
+          background-image:url(../../task14/images/sprite-2.png);
+          background-position:0 99%;
+          background-size:100%;
+          margin:0 auto;
+        }
+        .efficient{
+          font-size:.18rem;
+          text-align: center;
+          line-height:.7rem;
+        }
+        .shape-detail{
+          .disp;
+          width:2.28rem;
+          font-size:.16rem;
+          color:#999;
+        }
+      }
+    }
+
+    .dashed{
+      margin:0;
+      .head{
+        background:url(../../task14/images/user.png) center no-repeat;
+        width:.13rem;
+        height:.13rem;
+        background-size:100%;
+        .disp;
+      }
+      .total{
+        color:@color;
+      }
+      .total-detail{
+        line-height:.5rem;
+      }
+      border-left:1px dashed #999;
+      font-size:.18rem;
+      color:#999;
+      padding:.5rem 0 .5rem .5rem;
+    }
+    .how{
+      font-size:.18rem;
+      line-height:1.3rem;
+      text-align: center;
+    }
+    .box-line{
+      .po;
+      .box-step{
+        font-size:0;
+        margin-bottom:.8rem;
+        .disp(inline-flex);
+        align-items:center;
+        .round{
+          .fl;
+          .round(.7rem);
+          .center;
+          margin-right:.1rem;
+          background-color:white;
+          box-shadow:1px 1px 18px 1px #999;
+          font-size:.18rem;
+          color:@color;
+        }
+        .step{
+          width:1.6rem;
+          font-size:.14rem;
+          color:#999;
+          line-height:.25rem;
+        }
+        .arrow{
+          background:url(../../task14/images/arrow.png) center no-repeat;
+          width:.32rem;
+          height:.3rem;
+          background-size:100%;
+          margin:0 .25rem;
+        }
+        .last{
+          width:1.22rem;
+        }
+      }
+
+    }
+    .student{
+      .flex;
+      .student-box{
+        width:2.1rem;
+        padding:.2rem .3rem .3rem .3rem;
+        box-shadow: 1px 1px 6px 1px #999;
+        .disp;
+        .avatar-four{
+          margin:0 auto;
+          .round(1.1rem);
+          background-size:100%;
+        }
+        .avatar{
+          .avatar-four;
+          background:url(../../task14/images/avatar.png) center no-repeat;
+        }
+        .avatar2{
+          .avatar-four;
+          background:url(../../task14/images/avatar2.png) center no-repeat;
+        }
+        .avatar3{
+          .avatar-four;
+          background:url(../../task14/images/avatar3.png) center no-repeat;
+        }
+        .avatar4{
+          .avatar-four;
+          background:url(../../task14/images/avatar4.png) center no-repeat;
+        }
+        p{
+          font-size:.18rem;
+          text-align: center;
+          line-height:.75rem;
+          padding:0;
+        }
+        .introduce{
+          font-size:.16rem;
+          color:#999;
+          line-height:.23rem;
+        }
+      }
+    }
+    .company{
+      background-color:white;
+      border:1px solid #e2e2e2;
+      margin-bottom:.9rem;
+      .flex;
+      flex-wrap: wrap;
+      .box-company{
+        margin:.02rem 0;
+        &:hover{
+          box-shadow: 1px 1px 15px 1px #999;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  .container{
+    .footer-top{
+      .link{
+        font-size:.18rem;
+        text-align: center;
+        line-height:.5rem;
+      }
+      .link-detail{
+        span{
+          color:#999;
+          margin-right:.5rem;
+          margin-bottom:.12rem;
+          font-size:.14rem;
+          border-bottom:1px solid white;
+          .disp;
+          &:hover{
+            border-bottom:1px solid @color;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1200px ){
+  main .container .box-four{
+    display: block;
+    margin: 0 auto;
+    width: 2rem;
+  }
+  main .container .student .student-box{
+    margin: .3rem auto;
+    width:calc(~"100% - .6rem");
+    display: block;
+  }
+  main .container .student{
+    display: block;
+  }
+}
+
+
+
+
+/*推荐页*/
+.introduce{
+  font-size:.14rem;
+  color:#999;
+  line-height:.3rem;
+}
+
+main{
+  .background{
+    font-size:0;
+    background-color:#f1a750;
+    img{
+      width:100%;
+    }
+  }
+  .container{
+    .direct{
+      line-height:.8rem;
+      font-size:.16rem;
+      .direct-com{
+        color:@color;
+      }
+    }
+    .list-box{
+      float:left;
+      width: 26%;
+      background-color:white;
+      box-shadow:1px 1px 5px 1px #e6e6e6;
+      .com-title{
+        text-align: center;
+        line-height:.62rem;
+        font-size:.16rem;
+        border-bottom:1px solid #e6e6e6;
+      }
+      .com-list{
+        width:1rem;
+        margin:.1rem auto;
+        line-height:.5rem;
+        font-size:.14rem;
+        text-align: left;
+        a{
+          display: block;
+          color:@color;
+          &:hover{
+            color:#ff7527;
+          }
+          &:hover .round-com{
+            background-color: #f9a372;
+          }
+        }
+        .round-com{
+          .round(.1rem);
+          .disp;
+          margin-right:.1rem;
+          background-color:white;
+          border:1px solid #ff7527;
+
+        }
+      }
+    }
+    .com-box{
+      float:right;
+      width:70%;
+      margin-bottom:1.4rem;
+      background-color:white;
+      box-shadow:1px 1px 5px 1px #e6e6e6;
+      .com-title{
+        border-bottom:1px solid #e6e6e6;
+        padding:.2rem .6rem;
+
+        .com-logo{
+          background:url(../../task14/images/tudou.png) center no-repeat;
+          float:left;
+          width:2.1rem;
+          height:1rem;
+        }
+        .com-introduce{
+          .introduce
+        }
+
+      }
+      .com-detail{
+        padding:.3rem .7rem 1.7rem .7rem;
+        .introduce;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  main .container {
+    .list-box{
+    width:100%;
+  }
+    .com-box{
+    width:100%;
+    }
+  }
+}
+
+
+/*职业列表页*/
+main{
+  .direction{
+    border-top:1px solid #d0d6d9;
+    border-bottom:1px solid #edf1f2;
+    span{
+      .disp;
+      margin:.2rem .32rem .2rem 0;
+      font-size:.14rem;
+    }
+    .first{
+      color:#999;
+    }
+    .next{
+      &:hover{
+        background-color:@color;
+        color:white;
+        .pointer;
+      }
+    }
+  }
+  .line{
+    line-height:.8rem;
+    font-size:.16rem;
+    border-bottom:1px solid #d0d6d9;
+  }
+  .card-three{
+    .flex;
+    flex-wrap: wrap;
+    .card{
+      .po;
+      .disp;
+      margin-top:.46rem;
+      width:32%;
+      box-shadow: 1px 1px 10px 1px #999;
+      background-color:white;
+      &:hover .animation{
+        opacity: 1;
+      }
+      .card-top {
+        padding: .2rem .1rem;
+        .avatar {
+          .fl;
+          margin-right:.1rem;
+          background: url(../../task14/images/avatar.jpg) center no-repeat;
+          width: 1.4rem;
+          height: 1.4rem;
+          background-size: contain;
+        }
+        .web{
+          line-height:.42rem;
+          font-size:.16rem;
+        }
+        .web-introduce{
+          font-size:.14rem;
+        }
+      }
+      .line-right{
+        border-right:1px solid #edf1f2;
+      }
+      .key{
+        display: inline-flex;
+        float:left;
+        align-items:center;
+        width:calc(~"50% - 1px");
+        height:.4rem;
+        font-size:.12rem;
+        border-top:1px solid #edf1f2;
+        color:#a1a1a1;
+        .key-words{
+          margin:0 .1rem;
+        }
+        .num{
+          color:#f01400;
+        }
+        .year{
+          color:black;
+        }
+      }
+      .salary-line{
+        .salary{
+          .fl;
+          width:40%;
+          height:1.2rem;
+          color:#a1a1a1;
+          .center;
+          border-top:1px solid #edf1f2;
+        }
+        .salary-detail{
+          .fl;
+          width:calc(~"60% - 1px");
+          line-height:.4rem;
+          border-top:1px solid #edf1f2;
+          .experience{
+            .fl;
+            margin-left:.1rem;
+          }
+          .salary-month{
+            .fl(right);
+            margin-right:.1rem;
+          }
+        }
+      }
+      .study-now{
+        padding-left:.1rem;
+        font-size:.14rem;
+        border-top:1px solid #edf1f2;
+        line-height:.4rem;
+        .red{
+          color:#f01400;
+        }
+      }
+      .tips{
+        color:#a1a1a1;
+      }
+      .animation{
+        .po(absolute);
+        top:0;
+        height:calc(~"100% - .5rem");
+        padding:.5rem .4rem 0 .4rem;
+        font-size:.16rem;
+        line-height:.24rem;
+        color:white;
+        background-color:rgba(0,0,9,.7);
+        opacity:0;
+        transition:1s linear;
+        .card-cover-item{
+          line-height:.8rem;
+          text-align: center;
+        }
+      }
+    }
+    .card-none{
+      width:32%;
+      opacity:0;
+    }
+  }
+}
+@media screen and(max-width: 996px){
+  main .card-three .card{
+    width:49%;
+  }
+}
+@media screen and(max-width: 768px){
+  main .card-three .card{
+    width:100%;
+  }
+}
+
