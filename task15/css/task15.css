@@ -32,19 +32,19 @@ main {
   background-color: #fafafa;
   padding-bottom: .9rem;
 }
-main .container {
+.container {
   position: relative;
 }
-main .container .box-four {
+.box-four {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-main .container .box-four .box {
+.box {
   padding-top: .2rem;
   vertical-align: top;
 }
-main .container .box-four .box .shape1 {
+.box .shape1 {
   height: .53rem;
   width: .47rem;
   background-image: url(../../task14/images/sprite-2.png);
@@ -52,7 +52,7 @@ main .container .box-four .box .shape1 {
   background-size: 100%;
   margin: 0 auto;
 }
-main .container .box-four .box .shape2 {
+.box .shape2 {
   height: .53rem;
   width: .55rem;
   background-image: url(../../task14/images/sprite-2.png);
@@ -60,7 +60,7 @@ main .container .box-four .box .shape2 {
   background-size: 100%;
   margin: 0 auto;
 }
-main .container .box-four .box .shape3 {
+.box .shape3 {
   height: .53rem;
   width: .55rem;
   background-image: url(../../task14/images/sprite-2.png);
@@ -68,52 +68,60 @@ main .container .box-four .box .shape3 {
   background-size: 100%;
   margin: 0 auto;
 }
-main .container .box-four .box .efficient {
+.box .efficient {
   font-size: .18rem;
   text-align: center;
   line-height: .7rem;
 }
-main .container .box-four .box .shape-detail {
+.box .shape-detail {
   display: inline-block;
   width: 2.28rem;
   font-size: .16rem;
   color: #999;
 }
-main .container .dashed {
+.dashed {
   margin: 0;
   border-left: 1px dashed #999;
   font-size: .18rem;
   color: #999;
   padding: .5rem 0 .5rem .5rem;
 }
-main .container .dashed .head {
+.dashed .head {
   background: url(../../task14/images/user.png) center no-repeat;
   width: .13rem;
   height: .13rem;
   background-size: 100%;
   display: inline-block;
 }
-main .container .dashed .total {
+.dashed .total {
   color: #29b078;
 }
-main .container .dashed .total-detail {
+.dashed .total-detail {
   line-height: .5rem;
 }
-main .container .how {
+.how {
   font-size: .18rem;
   line-height: 1.3rem;
   text-align: center;
 }
-main .container .box-line {
-  position: relative;
+@media only screen and (max-width: 1200px) {
+  .box-line {
+    width: 68%;
+    margin: 0 auto;
+  }
 }
-main .container .box-line .box-step {
+@media only screen and (max-width: 996px) {
+  .box-line {
+    width: 3.5rem;
+  }
+}
+.box-step {
   font-size: 0;
   margin-bottom: .8rem;
   display: inline-flex;
   align-items: center;
 }
-main .container .box-line .box-step .round {
+.box-step .round {
   float: left;
   width: 0.7rem;
   height: 0.7rem;
@@ -127,41 +135,41 @@ main .container .box-line .box-step .round {
   font-size: .18rem;
   color: #29b078;
 }
-main .container .box-line .box-step .step {
+.box-step .step {
   width: 1.6rem;
   font-size: .14rem;
   color: #999;
   line-height: .25rem;
 }
-main .container .box-line .box-step .arrow {
+.box-step .arrow {
   background: url(../../task14/images/arrow.png) center no-repeat;
   width: .32rem;
   height: .3rem;
   background-size: 100%;
   margin: 0 .25rem;
 }
-main .container .box-line .box-step .last {
+.box-step .last {
   width: 1.22rem;
 }
-main .container .student {
+.student {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-main .container .student .student-box {
+.student-box {
   width: 2.1rem;
   padding: .2rem .3rem .3rem .3rem;
   box-shadow: 1px 1px 6px 1px #999;
   display: inline-block;
 }
-main .container .student .student-box .avatar-four {
+.student-box .avatar-four {
   margin: 0 auto;
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 50%;
   background-size: 100%;
 }
-main .container .student .student-box .avatar {
+.student-box .avatar {
   margin: 0 auto;
   width: 1.1rem;
   height: 1.1rem;
@@ -169,7 +177,7 @@ main .container .student .student-box .avatar {
   background-size: 100%;
   background: url(../../task14/images/avatar.png) center no-repeat;
 }
-main .container .student .student-box .avatar2 {
+.student-box .avatar2 {
   margin: 0 auto;
   width: 1.1rem;
   height: 1.1rem;
@@ -177,7 +185,7 @@ main .container .student .student-box .avatar2 {
   background-size: 100%;
   background: url(../../task14/images/avatar2.png) center no-repeat;
 }
-main .container .student .student-box .avatar3 {
+.student-box .avatar3 {
   margin: 0 auto;
   width: 1.1rem;
   height: 1.1rem;
@@ -185,7 +193,7 @@ main .container .student .student-box .avatar3 {
   background-size: 100%;
   background: url(../../task14/images/avatar3.png) center no-repeat;
 }
-main .container .student .student-box .avatar4 {
+.student-box .avatar4 {
   margin: 0 auto;
   width: 1.1rem;
   height: 1.1rem;
@@ -193,18 +201,18 @@ main .container .student .student-box .avatar4 {
   background-size: 100%;
   background: url(../../task14/images/avatar4.png) center no-repeat;
 }
-main .container .student .student-box p {
+.student-box p {
   font-size: .18rem;
   text-align: center;
   line-height: .75rem;
   padding: 0;
 }
-main .container .student .student-box .introduce {
+.student-box .introduce {
   font-size: .16rem;
   color: #999;
   line-height: .23rem;
 }
-main .container .company {
+.company {
   background-color: white;
   border: 1px solid #e2e2e2;
   margin-bottom: .9rem;
@@ -213,18 +221,18 @@ main .container .company {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .container .company .box-company {
+.company .box-company {
   margin: .02rem 0;
 }
-main .container .company .box-company:hover {
+.company .box-company:hover {
   box-shadow: 1px 1px 15px 1px #999;
 }
-footer .container .footer-top .link {
+.footer-top .link {
   font-size: .18rem;
   text-align: center;
   line-height: .5rem;
 }
-footer .container .footer-top .link-detail span {
+.footer-top .link-detail span {
   color: #999;
   margin-right: .5rem;
   margin-bottom: .12rem;
@@ -232,21 +240,21 @@ footer .container .footer-top .link-detail span {
   border-bottom: 1px solid white;
   display: inline-block;
 }
-footer .container .footer-top .link-detail span:hover {
+.footer-top .link-detail span:hover {
   border-bottom: 1px solid #29b078;
 }
 @media screen and (max-width: 1200px) {
-  main .container .box-four {
+  .container .box-four {
     display: block;
     margin: 0 auto;
     width: 2rem;
   }
-  main .container .student .student-box {
+  .container .student .student-box {
     margin: .3rem auto;
     width: calc(100% - .6rem);
     display: block;
   }
-  main .container .student {
+  .container .student {
     display: block;
   }
 }
@@ -256,50 +264,50 @@ footer .container .footer-top .link-detail span:hover {
   color: #999;
   line-height: .3rem;
 }
-main .background {
+.background {
   font-size: 0;
   background-color: #f1a750;
 }
-main .background img {
+.background img {
   width: 100%;
 }
-main .container .direct {
+.direct {
   line-height: .8rem;
   font-size: .16rem;
 }
-main .container .direct .direct-com {
+.direct .direct-com {
   color: #29b078;
 }
-main .container .list-box {
+.list-box {
   float: left;
   width: 26%;
   background-color: white;
   box-shadow: 1px 1px 5px 1px #e6e6e6;
 }
-main .container .list-box .com-title {
+.list-box .com-title {
   text-align: center;
   line-height: .62rem;
   font-size: .16rem;
   border-bottom: 1px solid #e6e6e6;
 }
-main .container .list-box .com-list {
+.list-box .com-list {
   width: 1rem;
   margin: .1rem auto;
   line-height: .5rem;
   font-size: .14rem;
   text-align: left;
 }
-main .container .list-box .com-list a {
+.list-box .com-list a {
   display: block;
   color: #29b078;
 }
-main .container .list-box .com-list a:hover {
+.list-box .com-list a:hover {
   color: #ff7527;
 }
-main .container .list-box .com-list a:hover .round-com {
+.list-box .com-list a:hover .round-com {
   background-color: #f9a372;
 }
-main .container .list-box .com-list .round-com {
+.list-box .com-list .round-com {
   width: 0.1rem;
   height: 0.1rem;
   border-radius: 50%;
@@ -308,72 +316,72 @@ main .container .list-box .com-list .round-com {
   background-color: white;
   border: 1px solid #ff7527;
 }
-main .container .com-box {
+.com-box {
   float: right;
   width: 70%;
   margin-bottom: 1.4rem;
   background-color: white;
   box-shadow: 1px 1px 5px 1px #e6e6e6;
 }
-main .container .com-box .com-title {
+.com-box .com-title {
   border-bottom: 1px solid #e6e6e6;
   padding: .2rem .6rem;
 }
-main .container .com-box .com-title .com-logo {
+.com-box .com-title .com-logo {
   background: url(../../task14/images/tudou.png) center no-repeat;
   float: left;
   width: 2.1rem;
   height: 1rem;
 }
-main .container .com-box .com-title .com-introduce {
+.com-box .com-title .com-introduce {
   font-size: .14rem;
   color: #999;
   line-height: .3rem;
 }
-main .container .com-box .com-detail {
+.com-box .com-detail {
   padding: .3rem .7rem 1.7rem .7rem;
   font-size: .14rem;
   color: #999;
   line-height: .3rem;
 }
 @media screen and (max-width: 768px) {
-  main .container .list-box {
+  .container .list-box {
     width: 100%;
   }
-  main .container .com-box {
+  .container .com-box {
     width: 100%;
   }
 }
 /*职业列表页*/
-main .direction {
+.direction {
   border-top: 1px solid #d0d6d9;
   border-bottom: 1px solid #edf1f2;
 }
-main .direction span {
+.direction span {
   display: inline-block;
   margin: .2rem .32rem .2rem 0;
   font-size: .14rem;
 }
-main .direction .first {
+.direction .first {
   color: #999;
 }
-main .direction .next:hover {
+.direction .next:hover {
   background-color: #29b078;
   color: white;
   cursor: pointer;
 }
-main .line {
+.line {
   line-height: .8rem;
   font-size: .16rem;
   border-bottom: 1px solid #d0d6d9;
 }
-main .card-three {
+.card-three {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .card-three .card {
+.card {
   position: relative;
   display: inline-block;
   margin-top: .46rem;
@@ -381,13 +389,13 @@ main .card-three .card {
   box-shadow: 1px 1px 10px 1px #999;
   background-color: white;
 }
-main .card-three .card:hover .animation {
+.card:hover .animation {
   opacity: 1;
 }
-main .card-three .card .card-top {
+.card-top {
   padding: .2rem .1rem;
 }
-main .card-three .card .card-top .avatar {
+.card-top .avatar {
   float: left;
   margin-right: .1rem;
   background: url(../../task14/images/avatar.jpg) center no-repeat;
@@ -395,17 +403,17 @@ main .card-three .card .card-top .avatar {
   height: 1.4rem;
   background-size: contain;
 }
-main .card-three .card .card-top .web {
+.card-top .web {
   line-height: .42rem;
   font-size: .16rem;
 }
-main .card-three .card .card-top .web-introduce {
+.card-top .web-introduce {
   font-size: .14rem;
 }
-main .card-three .card .line-right {
+.line-right {
   border-right: 1px solid #edf1f2;
 }
-main .card-three .card .key {
+.key {
   display: inline-flex;
   float: left;
   align-items: center;
@@ -415,52 +423,54 @@ main .card-three .card .key {
   border-top: 1px solid #edf1f2;
   color: #a1a1a1;
 }
-main .card-three .card .key .key-words {
+.key .key-words {
   margin: 0 .1rem;
 }
-main .card-three .card .key .num {
+.key .num {
   color: #f01400;
 }
-main .card-three .card .key .year {
+.key .year {
   color: black;
 }
-main .card-three .card .salary-line .salary {
+.salary-line .salary {
   float: left;
   width: 40%;
   height: 1.2rem;
   color: #a1a1a1;
+  font-size: .12rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top: 1px solid #edf1f2;
 }
-main .card-three .card .salary-line .salary-detail {
+.salary-line .salary-detail {
   float: left;
   width: calc(60% - 1px);
   line-height: .4rem;
   border-top: 1px solid #edf1f2;
+  font-size: .12rem;
 }
-main .card-three .card .salary-line .salary-detail .experience {
+.salary-line .salary-detail .experience {
   float: left;
   margin-left: .1rem;
 }
-main .card-three .card .salary-line .salary-detail .salary-month {
+.salary-line .salary-detail .salary-month {
   float: right;
   margin-right: .1rem;
 }
-main .card-three .card .study-now {
+.study-now {
   padding-left: .1rem;
   font-size: .14rem;
   border-top: 1px solid #edf1f2;
   line-height: .4rem;
 }
-main .card-three .card .study-now .red {
+.study-now .red {
   color: #f01400;
 }
-main .card-three .card .tips {
+.tips {
   color: #a1a1a1;
 }
-main .card-three .card .animation {
+.animation {
   position: absolute;
   top: 0;
   height: calc(100% - .5rem);
@@ -472,21 +482,21 @@ main .card-three .card .animation {
   opacity: 0;
   transition: 1s linear;
 }
-main .card-three .card .animation .card-cover-item {
+.animation .card-cover-item {
   line-height: .8rem;
   text-align: center;
 }
-main .card-three .card-none {
+.card-none {
   width: 32%;
   opacity: 0;
 }
 @media screen and (max-width: 996px) {
-  main .card-three .card {
+  .card-three .card {
     width: 49%;
   }
 }
 @media screen and (max-width: 768px) {
-  main .card-three .card {
+  .card-three .card {
     width: 100%;
   }
 }
